@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Cafe</title>
+      <!-- esto de meta es para que google sepa de que trata nuestra pagina web(SEO)-->
+      <meta name="description" content="pagina web de blog de cafe">
+      <!--
+      <link rel="stylesheet" href = "css/normalize.css">
+      <link rel="stylesheet" href = "css/style.css">
+       -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+      <!--Prefetch-->
+       <!--hace la carga mas rapida de la pagina que nosotros pensamos que el usuario
+       iria despues de entrar en el index (solo 1 pag si metemos todas no tiene sentido)-->
+      <link rel="Prefetch" href = "nosotros.html" as="document">
+  
+      <!--Preload-->
+      <!--para que cargue mas rapido sino lo puedo dejar como lo deje arriba pero carga a medida
+      que avanzamos en la pagina-->
+      <link rel="Preload" href = "css/normalize.css" as="style">
+      <link rel="stylesheet" href = "css/normalize.css">
+  
+      <link rel="Preload" href = "css/style.css" as="style">
+      <link rel="stylesheet" href = "css/style.css">
+  
+      <!--<link rel="Preload" href = "img/blog1.jpg" as="image">-->
+</head>
+<body>
+    <header class="header">
+
+        <!--armo el logo-->
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1> <!--el span para cuando quiera tener una variante en el texto-->
+                </a>
+                <!--barra de navegacion-->
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> <!--a.navegacion_enlace*3-->
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!--titulo-->
+        <div class="header__texto"> <!--tiene doble guion bajo porque es un elemento del bloque header -->
+            <h2 class="no-margin">Blog de cafe con consejos y Cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+
+    </header>
+
+
+   <main class="contenedor">
+        
+            <h3 class="centrar-texto">Sobre Nosotros</h3>
+            <img src="img/blog1.jpg" alt="imagen del blog">
+
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" 
+                by Cicero are also reproduced in their
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" 
+                by Cicero are also reproduced in their
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" 
+                by Cicero are also reproduced in their
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" 
+                by Cicero are also reproduced in their
+            </p>
+        
+   </main>
+
+
+
+        <footer class="footer">
+           <div class="contenedor">
+                <div class="barra">
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1> <!--el span para cuando quiera tener una variante en el texto-->
+                    </a>
+                    <!--barra de navegacion-->
+                    <nav class="navegacion">
+                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> <!--a.navegacion_enlace*3-->
+                        <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    </nav>
+                </div>
+           </div>
+        </footer> 
+        <script src="./js/modernizr.js"></script>
+</body>
+</html>
